@@ -1,0 +1,107 @@
+version: 2
+
+models:
+  
+  # --- DIMENSIONS ---
+  - name: dim_customer
+    description: "Customer dimension table"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_orders
+    description: "Order dimension table (Order status, timestamps)"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+  - name: dim_product
+    description: "Product dimension table (Categories, names)"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_seller
+    description: "Seller dimension table (Location data)"
+    columns:
+      - name: seller_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_reviews
+    description: "Reviews dimension"
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('dim_orders')
+              field: order_id
+
+  - name: dim_payments
+    description: "Payments dimension/lookup"
+    columns:
+      # We added this Surrogate Key (MD5) to ensure uniqueness
+      - name: payment_sk
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+  
+
+  
+  # --- FACTS ---
+  - name: fact_order_items
+    description: "Transactional fact table at the order item grain"
+    columns:
+      # The Primary Key we created with MD5
+      - name: order_item_sk
+        tests:
+          - unique
+          - not_null
+
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_orders')
+              field: order_id
+              
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_id
+
+      - name: seller_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_seller')
+              field: seller_id
+
+ 
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
