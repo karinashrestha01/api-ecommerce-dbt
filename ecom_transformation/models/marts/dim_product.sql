@@ -4,17 +4,15 @@ WITH stg_products AS (
 
 SELECT 
     product_id,
-    -- FIX: Use the cleaned english column from staging
-    COALESCE(INITCAP(REPLACE(category_name_en, '_', ' ')), 'Uncategorized') AS product_category,
+    -- Use the cleaned English name
+    COALESCE(category_name_en, 'Uncategorized') AS product_category,
     
-    -- NOTE: 'product_photos_qty' does not exist in your stg_products SQL.
-    -- If you want it, you must go back and add it to stg_products.sql first!
-    -- For now, I will omit it to prevent error.
+    -- Now we can select this because we added it to staging!
+    photos_qty AS product_photos_qty,
     
-    -- FIX: Use 'weight_g' (the name in staging), not 'product_weight_g'
     weight_g AS product_weight_g,
     
-    -- FIX: Use the 'length_cm', 'height_cm', etc from staging
+    -- Dimensions
     CAST(length_cm AS VARCHAR) || 'x' || 
     CAST(height_cm AS VARCHAR) || 'x' || 
     CAST(width_cm AS VARCHAR) AS product_dims

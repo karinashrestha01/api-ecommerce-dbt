@@ -8,26 +8,29 @@ orders AS (
 )
 
 SELECT
-    -- Native PostgreSQL Hashing:
+    -- Surrogate Key
     MD5(items.order_id || '-' || CAST(items.order_item_id AS VARCHAR)) as order_item_sk,
 
-    -- 2. Natural Key
+    -- Natural Key
     items.order_item_id,
 
-    -- 3. Foreign Keys (Links to Dimensions)
+    -- Foreign Keys
     items.order_id,     
     items.product_id,   
     items.seller_id,    
-    orders.customer_id, 
+    
+    -- Handle missing customer_id because of the data mismatch
+    COALESCE(orders.customer_id, 'Unknown') as customer_id, 
 
-    -- 4. Metrics / Measures
+    -- Metrics
     items.price,
     items.freight_value,
     
-    -- 5. Calculated Metric (Total Value)
+    -- Total Value
     (items.price + items.freight_value) AS total_item_value
 
 FROM items
--- Inner join because an item cannot exist without a parent order header
-INNER JOIN orders 
+-- CHANGE TO LEFT JOIN
+-- This keeps the item data even if the order header is missing
+LEFT JOIN orders 
     ON items.order_id = orders.order_id

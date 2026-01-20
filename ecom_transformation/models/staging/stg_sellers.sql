@@ -8,6 +8,6 @@ SELECT
     COALESCE(
             INITCAP(NULLIF(seller_city, '')), 
             'Unknown'
-        ) AS seller_city
+        ) AS seller_city,
     INITCAP(seller_state) AS state
 FROM source

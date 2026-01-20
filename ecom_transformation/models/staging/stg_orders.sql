@@ -1,5 +1,5 @@
 WITH source AS (
-    SELECT * FROM {{ source('ecommerce_raw', 'orders') }}
+    SELECT DISTINCT ON (order_id) * FROM {{ source('ecommerce_raw', 'orders') }}
 )
 
 SELECT

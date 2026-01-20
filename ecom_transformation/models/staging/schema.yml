@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Staged customer data
+    columns:
+      - name: customer_id
+        description: Primary key. Unique identifier for the customer.
+        tests:
+          - unique
+          - not_null
+          
+        
+
+  - name: stg_orders
+    description: Staged order headers
+    columns:
+      - name: order_id
+        description: Primary key. Unique identifier for the order.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_order_items
+    description: Staged order line items
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: order_item_id
+        description: Sequential number identifying number of items in the same order.
+        tests:
+          - not_null
+
+
+  - name: stg_order_payments
+    description: Staged payment data
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+
+  - name: stg_order_reviews
+    description: Staged review data
+    columns:
+      - name: review_id
+        tests:
+          - not_null # Note: review_id is not always unique in Olist (one review can cover multiple orders), but usually treated as PK.
+
+  - name: stg_products
+    description: Staged product catalog
+    columns:
+      - name: product_id
+        description: Primary key. Unique identifier for the product.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_sellers
+    description: Staged seller registry
+    columns:
+      - name: seller_id
+        description: Primary key. Unique identifier for the seller.
+        tests:
+          - unique
+          - not_null
