@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: ecommerce_raw
+    schema: raw  # This matches your python loader schema
+    tables:
+      - name: customers
+      - name: orders
+      - name: products
+      - name: sellers
+      - name: order_items
+      - name: order_payments
+      - name: order_reviews

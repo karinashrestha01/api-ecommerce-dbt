@@ -1,0 +1,908 @@
+{
+  "data": [
+    {
+      "order_id": "00010242fe8c5a6d1ba2dd792cb16214",
+      "order_item_id": "1",
+      "product_id": "4244733e06e7ecb4970a6e2683c13e61",
+      "seller_id": "48436dade18ac8b2bce089ec2a041202",
+      "shipping_limit_date": "invalid-date",
+      "price": "58.9",
+      "freight_value": "13.29"
+    },
+    {
+      "order_id": "00018f77f2f0320c557190d7a144bdd3",
+      "order_item_id": "1",
+      "product_id": "e5f2d52b802189ee658865ca93d83a8f",
+      "seller_id": "dd7ddc04e1b6c2c614352b383efe2d36",
+      "shipping_limit_date": "2017-05-03 11:05:13",
+      "price": "239.9",
+      "freight_value": "19.93"
+    },
+    {
+      "order_id": "000229ec398224ef6ca0657da4fc703e",
+      "order_item_id": "1",
+      "product_id": "c777355d18b72b67abbeef9df44fd0fd",
+      "seller_id": "5b51032eddd242adc84c38acab88f23d",
+      "shipping_limit_date": "2018-01-18 14:48:30",
+      "price": "199.0",
+      "freight_value": "17.87"
+    },
+    {
+      "order_id": "00024acbcdf0a6daa1e931b038114c75",
+      "order_item_id": "1",
+      "product_id": "7634da152a4610f1595efa32f14722fc",
+      "seller_id": "9d7a1d34a5052409006425275ba1c2b4",
+      "shipping_limit_date": "1534327818",
+      "price": "12.99",
+      "freight_value": "12.79"
+    },
+    {
+      "order_id": "00042b26cf59d7ce69dfabb4e55b4fd9",
+      "order_item_id": "1",
+      "product_id": "ac6c3623068f30de03045865e4e10089",
+      "seller_id": "df560393f3a51e74553ab94004ba5c87",
+      "shipping_limit_date": "2017-02-13 13:57:51",
+      "price": "199.9",
+      "freight_value": "18.14"
+    },
+    {
+      "order_id": "00048cc3ae777c65dbb7d2a0634bc1ea",
+      "order_item_id": "1",
+      "product_id": "ef92defde845ab8450f9d70c526ef70f",
+      "seller_id": "6426d21aca402a131fc0a5d0960a3c90",
+      "shipping_limit_date": "2017-05-23 03:55:27",
+      "price": "21.9",
+      "freight_value": "12.69"
+    },
+    {
+      "order_id": "00054e8431b9d7675808bcb819fb4a32",
+      "order_item_id": "1",
+      "product_id": "8d4f2bb7e93e6710a28f34fa83ee7d28",
+      "seller_id": "7040e82f899a04d1b434b795a43b4617",
+      "shipping_limit_date": "1513253431",
+      "price": "19.9",
+      "freight_value": "11.85"
+    },
+    {
+      "order_id": "000576fe39319847cbb9d288c5617fa6",
+      "order_item_id": "1",
+      "product_id": "557d850972a7d6f792fd18ae1400d9b6",
+      "seller_id": "5996cddab893a4652a15592fb58ab8db",
+      "shipping_limit_date": "10/07/2018 12:30:45",
+      "price": "810.0",
+      "freight_value": "70.75"
+    },
+    {
+      "order_id": "0005a1a1728c9d785b8e2b08b904576c",
+      "order_item_id": "1",
+      "product_id": "310ae3c140ff94b03219ad0adc3c778f",
+      "seller_id": "a416b6a846a11724393025641d4edd5e",
+      "shipping_limit_date": "1522089089",
+      "price": "145.95",
+      "freight_value": "11.65"
+    },
+    {
+      "order_id": "0005f50442cb953dcd1d21e1fb923495",
+      "order_item_id": "1",
+      "product_id": "4535b0e1091c278dfd193e5a1d63b39f",
+      "seller_id": "ba143b05f0110f0dc71ad71b4466ce92",
+      "shipping_limit_date": "2018-07-06 14:10:56",
+      "price": "53.99",
+      "freight_value": "11.4"
+    },
+    {
+      "order_id": "00061f2a7bc09da83e415a52dc8a4af1",
+      "order_item_id": "1",
+      "product_id": "d63c1011f49d98b976c352955b1c4bea",
+      "seller_id": "cc419e0650a3c5ba77189a1882b7556a",
+      "shipping_limit_date": "2018-03-29 22:28:09",
+      "price": "59.99",
+      "freight_value": "8.88"
+    },
+    {
+      "order_id": "00063b381e2406b52ad429470734ebd5",
+      "order_item_id": "1",
+      "product_id": "f177554ea93259a5b282f24e33f65ab6",
+      "seller_id": "8602a61d680a10a82cceeeda0d99ea3d",
+      "shipping_limit_date": "2018-07-31 17:30:39",
+      "price": "45.0",
+      "freight_value": "12.98"
+    },
+    {
+      "order_id": "0006ec9db01a64e59a68b2c340bf65a7",
+      "order_item_id": "1",
+      "product_id": "99a4788cb24856965c36a24e339b6058",
+      "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+      "shipping_limit_date": "2018-07-26 17:24:20",
+      "price": "74.0",
+      "freight_value": "23.32"
+    },
+    {
+      "order_id": "0008288aa423d2a3f00fcb17cd7d8719",
+      "order_item_id": "1",
+      "product_id": "368c6c730842d78016ad823897a372db",
+      "seller_id": "1f50f920176fa81dab994f9023523100",
+      "shipping_limit_date": "invalid-date",
+      "price": "49.9",
+      "freight_value": "13.37"
+    },
+    {
+      "order_id": "0008288aa423d2a3f00fcb17cd7d8719",
+      "order_item_id": "2",
+      "product_id": "368c6c730842d78016ad823897a372db",
+      "seller_id": "1f50f920176fa81dab994f9023523100",
+      "shipping_limit_date": "2018-02-21 02:55:52",
+      "price": "49.9",
+      "freight_value": "13.37"
+    },
+    {
+      "order_id": "0009792311464db532ff765bf7b182ae",
+      "order_item_id": "1",
+      "product_id": "8cab8abac59158715e0d70a36c807415",
+      "seller_id": "530ec6109d11eaaf87999465c6afee01",
+      "shipping_limit_date": "2018-08-17 12:15:10",
+      "price": "99.9",
+      "freight_value": "27.65"
+    },
+    {
+      "order_id": "0009c9a17f916a706d71784483a5d643",
+      "order_item_id": "1",
+      "product_id": "3f27ac8e699df3d300ec4a5d8c5cf0b2",
+      "seller_id": "fcb5ace8bcc92f75707dc0f01a27d269",
+      "shipping_limit_date": "2018-05-02 09:31:53",
+      "price": "639.0",
+      "freight_value": "11.34"
+    },
+    {
+      "order_id": "000aed2e25dbad2f9ddb70584c5a2ded",
+      "order_item_id": "1",
+      "product_id": "4fa33915031a8cde03dd0d3e8fb27f01",
+      "seller_id": "fe2032dab1a61af8794248c8196565c9",
+      "shipping_limit_date": "2018-05-16 20:57:03",
+      "price": "144.0",
+      "freight_value": "8.77"
+    },
+    {
+      "order_id": "000c3e6612759851cc3cbb4b83257986",
+      "order_item_id": "1",
+      "product_id": "b50c950aba0dcead2c48032a690ce817",
+      "seller_id": "218d46b86c1881d022bce9c68a7d4b15",
+      "shipping_limit_date": "2017-08-21 03:33:13",
+      "price": "99.0",
+      "freight_value": "13.71"
+    },
+    {
+      "order_id": "000e562887b1f2006d75e0be9558292e",
+      "order_item_id": "1",
+      "product_id": "5ed9eaf534f6936b51d0b6c5e4d5c2e9",
+      "seller_id": "8cbac7e12637ed9cffa18c7875207478",
+      "shipping_limit_date": "2018-02-28 12:08:37",
+      "price": "25.0",
+      "freight_value": "16.11"
+    },
+    {
+      "order_id": "000e63d38ae8c00bbcb5a30573b99628",
+      "order_item_id": "1",
+      "product_id": "553e0e7590d3116a072507a3635d2877",
+      "seller_id": "1c129092bf23f28a5930387c980c0dfc",
+      "shipping_limit_date": "invalid-date",
+      "price": "47.9",
+      "freight_value": "8.88"
+    },
+    {
+      "order_id": "000e906b789b55f64edcb1f84030f90d",
+      "order_item_id": "1",
+      "product_id": "57d79905de06d8897872c551bfd09358",
+      "seller_id": "ea8482cd71df3c1969d7b9473ff13abc",
+      "shipping_limit_date": "1511809742",
+      "price": "21.99",
+      "freight_value": "11.85"
+    },
+    {
+      "order_id": "000f25f4d72195062c040b12dce9a18a",
+      "order_item_id": "1",
+      "product_id": "1c05e0964302b6cf68ca0d15f326c6ba",
+      "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
+      "shipping_limit_date": "2018-03-21 11:10:11",
+      "price": "119.99",
+      "freight_value": "44.4"
+    },
+    {
+      "order_id": "001021efaa8636c29475e7734483457d",
+      "order_item_id": "1",
+      "product_id": "5d7c23067ed3fc8c6e699b9373d5890b",
+      "seller_id": "6560211a19b47992c3666cc44a7e94c0",
+      "shipping_limit_date": "invalid-date",
+      "price": "49.0",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "0010b2e5201cc5f1ae7e9c6cc8f5bd00",
+      "order_item_id": "1",
+      "product_id": "5a419dbf24a8c9718fe522b81c69f61a",
+      "seller_id": "3504c0cb71d7fa48d967e0e4c94d59d9",
+      "shipping_limit_date": "2017-09-15 18:04:37",
+      "price": "48.9",
+      "freight_value": "16.6"
+    },
+    {
+      "order_id": "00119ff934e539cf26f92b9ef0cdfed8",
+      "order_item_id": "1",
+      "product_id": "21b1c2f67a9aafb5af0eb06c13b9dbda",
+      "seller_id": "c864036feaab8c1659f65ea4faebe1da",
+      "shipping_limit_date": "2017-08-11 00:35:12",
+      "price": "219.9",
+      "freight_value": "16.98"
+    },
+    {
+      "order_id": "0011d82c4b53e22e84023405fb467e57",
+      "order_item_id": "1",
+      "product_id": "c389f712c4b4510bc997cee93e8b1a28",
+      "seller_id": "bfd27a966d91cfaafdb25d076585f0da",
+      "shipping_limit_date": "2018-01-29 21:51:25",
+      "price": "289.0",
+      "freight_value": "26.33"
+    },
+    {
+      "order_id": "00125cb692d04887809806618a2a145f",
+      "order_item_id": "1",
+      "product_id": "1c0c0093a48f13ba70d0c6b0a9157cb7",
+      "seller_id": "41b39e28db005d9731d9d485a83b4c38",
+      "shipping_limit_date": "2017-03-29 13:05:42",
+      "price": "109.9",
+      "freight_value": "25.51"
+    },
+    {
+      "order_id": "00130c0eee84a3d909e75bc08c5c3ca1",
+      "order_item_id": "1",
+      "product_id": "89321f94e35fc6d7903d36f74e351d40",
+      "seller_id": "16090f2ca825584b5a147ab24aa30c86",
+      "shipping_limit_date": "2018-06-14 05:16:24",
+      "price": "27.9",
+      "freight_value": "7.94"
+    },
+    {
+      "order_id": "0013503b13da1eac686219390b7d641b",
+      "order_item_id": "1",
+      "product_id": "38afdf723b95d455b418a0f57d623c6b",
+      "seller_id": "1554a68530182680ad5c8b042c3ab563",
+      "shipping_limit_date": "2017-12-13 03:16:36",
+      "price": "119.9",
+      "freight_value": "17.32"
+    },
+    {
+      "order_id": "00137e170939bba5a3134e2386413108",
+      "order_item_id": "1",
+      "product_id": "672e757f331900b9deea127a2a7b79fd",
+      "seller_id": "e59aa562b9f8076dd550fcddf0e73491",
+      "shipping_limit_date": "2017-11-30 06:30:55",
+      "price": "397.0",
+      "freight_value": "24.65"
+    },
+    {
+      "order_id": "001427c0ec99cf8af737bd88e92fd444",
+      "order_item_id": "1",
+      "product_id": "28b4eced95a52d9c437a4caf9d311b95",
+      "seller_id": "77530e9772f57a62c906e1c21538ab82",
+      "shipping_limit_date": "2018-04-12 19:08:28",
+      "price": "59.9",
+      "freight_value": "23.35"
+    },
+    {
+      "order_id": "00143d0f86d6fbd9f9b38ab440ac16f5",
+      "order_item_id": "1",
+      "product_id": "e95ee6822b66ac6058e2e4aff656071a",
+      "seller_id": "a17f621c590ea0fab3d5d883e1630ec6",
+      "shipping_limit_date": "invalid-date",
+      "price": "21.33",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "00143d0f86d6fbd9f9b38ab440ac16f5",
+      "order_item_id": "2",
+      "product_id": "e95ee6822b66ac6058e2e4aff656071a",
+      "seller_id": "a17f621c590ea0fab3d5d883e1630ec6",
+      "shipping_limit_date": "2017-10-20 16:07:52",
+      "price": "21.33",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "00143d0f86d6fbd9f9b38ab440ac16f5",
+      "order_item_id": "3",
+      "product_id": "e95ee6822b66ac6058e2e4aff656071a",
+      "seller_id": "a17f621c590ea0fab3d5d883e1630ec6",
+      "shipping_limit_date": "2017-10-20 16:07:52",
+      "price": "21.33",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "0014ae671de39511f7575066200733b7",
+      "order_item_id": "1",
+      "product_id": "23365beed316535b4105bd800c46670e",
+      "seller_id": "92eb0f42c21942b6552362b9b114707d",
+      "shipping_limit_date": "2017-05-29 03:15:24",
+      "price": "16.5",
+      "freight_value": "14.1"
+    },
+    {
+      "order_id": "0015ebb40fb17286bea51d4607c4733c",
+      "order_item_id": "1",
+      "product_id": "50fd2b788dc166edd20512370dac54df",
+      "seller_id": "8b321bb669392f5163d04c59e235e066",
+      "shipping_limit_date": "1516266684",
+      "price": "21.9",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "00169e31ef4b29deaae414f9a5e95929",
+      "order_item_id": "1",
+      "product_id": "b10eba910a974df70b8a12d0665cdb9e",
+      "seller_id": "a3e9a2c700480d9bb01fba070ba80a0e",
+      "shipping_limit_date": "2018-01-23 03:35:47",
+      "price": "39.0",
+      "freight_value": "16.11"
+    },
+    {
+      "order_id": "0016dfedd97fc2950e388d2971d718c7",
+      "order_item_id": "1",
+      "product_id": "4089861a1bd4685da70bddd6b4f974f1",
+      "seller_id": "a35124e2d763d7ca3fbe3b97d143200f",
+      "shipping_limit_date": "2017-05-05 10:05:12",
+      "price": "49.75",
+      "freight_value": "20.8"
+    },
+    {
+      "order_id": "0017afd5076e074a48f1f1a4c7bac9c5",
+      "order_item_id": "1",
+      "product_id": "fe59a1e006df3ac42bf0ceb876d70969",
+      "seller_id": "25c5c91f63607446a97b143d2d535d31",
+      "shipping_limit_date": "2017-04-24 22:25:19",
+      "price": "809.1",
+      "freight_value": "44.29"
+    },
+    {
+      "order_id": "001862358bf858722e1e2ae000cfed8b",
+      "order_item_id": "1",
+      "product_id": "c6dd917a0be2a704582055949915ab32",
+      "seller_id": "7a67c85e85bb2ce8582c35f2203ad736",
+      "shipping_limit_date": "2018-02-13 19:10:37",
+      "price": "99.99",
+      "freight_value": "13.72"
+    },
+    {
+      "order_id": "0019c29108428acffd089c36103c9440",
+      "order_item_id": "1",
+      "product_id": "28b4eced95a52d9c437a4caf9d311b95",
+      "seller_id": "77530e9772f57a62c906e1c21538ab82",
+      "shipping_limit_date": "2018-03-12 06:50:26",
+      "price": "59.9",
+      "freight_value": "19.95"
+    },
+    {
+      "order_id": "001ab0a7578dd66cd4b0a71f5b6e1e41",
+      "order_item_id": "1",
+      "product_id": "0b0172eb0fd18479d29c3bc122c058c2",
+      "seller_id": "5656537e588803a555b8eb41f07a944b",
+      "shipping_limit_date": "2018-01-04 02:33:42",
+      "price": "24.89",
+      "freight_value": "17.63"
+    },
+    {
+      "order_id": "001ab0a7578dd66cd4b0a71f5b6e1e41",
+      "order_item_id": "2",
+      "product_id": "0b0172eb0fd18479d29c3bc122c058c2",
+      "seller_id": "5656537e588803a555b8eb41f07a944b",
+      "shipping_limit_date": "04/01/2018 02:33:42",
+      "price": "24.89",
+      "freight_value": "17.63"
+    },
+    {
+      "order_id": "001ab0a7578dd66cd4b0a71f5b6e1e41",
+      "order_item_id": "3",
+      "product_id": "0b0172eb0fd18479d29c3bc122c058c2",
+      "seller_id": "5656537e588803a555b8eb41f07a944b",
+      "shipping_limit_date": "2018-01-04 02:33:42",
+      "price": "24.89",
+      "freight_value": "17.63"
+    },
+    {
+      "order_id": "001ac194d4a326a6fa99b581e9a3d963",
+      "order_item_id": "1",
+      "product_id": "dbaee28f4ee64465838a229582d77520",
+      "seller_id": "ffc470761de7d0232558ba5e786e57b7",
+      "shipping_limit_date": "10/07/2018 02:51:10",
+      "price": "54.0",
+      "freight_value": "8.54"
+    },
+    {
+      "order_id": "001b76dd48a5b1eee3e87778daa40df8",
+      "order_item_id": "1",
+      "product_id": "dbb67791e405873b259e4656bf971246",
+      "seller_id": "9c0e69c7bf2619675bbadf47b43f655a",
+      "shipping_limit_date": "2018-04-02 17:50:17",
+      "price": "81.99",
+      "freight_value": "13.01"
+    },
+    {
+      "order_id": "001c85b5f68d2be0cb0797afc9e8ce9a",
+      "order_item_id": "1",
+      "product_id": "84f456958365164420cfc80fbe4c7fab",
+      "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+      "shipping_limit_date": "2017-11-29 22:38:47",
+      "price": "99.0",
+      "freight_value": "13.71"
+    },
+    {
+      "order_id": "001d8f0e34a38c37f7dba2a37d4eba8b",
+      "order_item_id": "1",
+      "product_id": "e67307ff0f15ade43fcb6e670be7a74c",
+      "seller_id": "f4aba7c0bca51484c30ab7bdc34bcdd1",
+      "shipping_limit_date": "2017-05-18 17:35:11",
+      "price": "18.99",
+      "freight_value": "7.78"
+    },
+    {
+      "order_id": "001d8f0e34a38c37f7dba2a37d4eba8b",
+      "order_item_id": "2",
+      "product_id": "e67307ff0f15ade43fcb6e670be7a74c",
+      "seller_id": "f4aba7c0bca51484c30ab7bdc34bcdd1",
+      "shipping_limit_date": "2017-05-18 17:35:11",
+      "price": "18.99",
+      "freight_value": "7.78"
+    },
+    {
+      "order_id": "001daeb0eddc45b999bad0801ad9d273",
+      "order_item_id": "1",
+      "product_id": "30c01cc81c9eb80469371743813789cc",
+      "seller_id": "f45122a9ab94eb4f3f8953578bc0c560",
+      "shipping_limit_date": "1495678520",
+      "price": "38.33",
+      "freight_value": "16.79"
+    },
+    {
+      "order_id": "001dbc16dc51075e987543d23a0507c7",
+      "order_item_id": "1",
+      "product_id": "777d2e438a1b645f3aec9bd57e92672c",
+      "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+      "shipping_limit_date": "2017-02-01 13:17:57",
+      "price": "69.9",
+      "freight_value": "18.0"
+    },
+    {
+      "order_id": "001e7ba991be1b19605ca0316e7130f9",
+      "order_item_id": "1",
+      "product_id": "884fa3cd42986ba480ea2f8ae4e25ff7",
+      "seller_id": "3340ef1913fb70d28420f6ceb685c339",
+      "shipping_limit_date": "23/03/2017 11:47:37",
+      "price": "195.0",
+      "freight_value": "18.21"
+    },
+    {
+      "order_id": "001e7cf2ad6bef3ade12ebc56ceaf0f3",
+      "order_item_id": "1",
+      "product_id": "bdcf6a834e8faa30dac3886c7a58e92e",
+      "seller_id": "2a84855fd20af891be03bc5924d2b453",
+      "shipping_limit_date": "1526986790",
+      "price": "35.9",
+      "freight_value": "15.2"
+    },
+    {
+      "order_id": "0020262c8a370bd5a174ea6a2a267321",
+      "order_item_id": "1",
+      "product_id": "a5341e3f8155dbb3e62323d3ea289729",
+      "seller_id": "ff063b022a9a0aab91bad2c9088760b7",
+      "shipping_limit_date": "04/12/2017 09:58:07",
+      "price": "79.5",
+      "freight_value": "21.05"
+    },
+    {
+      "order_id": "0020a222f55eb79a372d0efee3cca688",
+      "order_item_id": "1",
+      "product_id": "e19ddcc85537b41f22116c8d5425ef46",
+      "seller_id": "8a32e327fe2c1b3511609d81aaf9f042",
+      "shipping_limit_date": "21/08/2017 03:03:44",
+      "price": "29.99",
+      "freight_value": "15.1"
+    },
+    {
+      "order_id": "002175704e8b209f61b9ad5cfd92b60e",
+      "order_item_id": "1",
+      "product_id": "e6b6e13cf71449a457269f425b89dc74",
+      "seller_id": "b2ba3715d723d245138f291a6fe42594",
+      "shipping_limit_date": "2018-04-26 12:30:57",
+      "price": "109.9",
+      "freight_value": "13.21"
+    },
+    {
+      "order_id": "00229e4e43f7a7e0b9dd819ad43268d3",
+      "order_item_id": "1",
+      "product_id": "13fcfc313dfb2217e5ee3000a702f9ef",
+      "seller_id": "c3cfdc648177fdbbbb35635a37472c53",
+      "shipping_limit_date": "2018-04-10 16:50:11",
+      "price": "74.9",
+      "freight_value": "16.49"
+    },
+    {
+      "order_id": "0025081dcf9330f9a5052ae82c6ce396",
+      "order_item_id": "1",
+      "product_id": "4e3f399366b0047a572b6682f9bb166e",
+      "seller_id": "5f3ae9136c875522250f8184f253413a",
+      "shipping_limit_date": "invalid-date",
+      "price": "14.95",
+      "freight_value": "18.23"
+    },
+    {
+      "order_id": "00254baeb6c932b0a8aeead91fbd02b5",
+      "order_item_id": "1",
+      "product_id": "18901878788fec7ddc55e64d1ace8187",
+      "seller_id": "e8b4225284fbb02d16f200513f1f395d",
+      "shipping_limit_date": "invalid-date",
+      "price": "149.9",
+      "freight_value": "43.11"
+    },
+    {
+      "order_id": "00259a44fcad3fc0474329e925d14fc3",
+      "order_item_id": "1",
+      "product_id": "0c4d0a08f95c7b7dc5dc7402bfdafd4c",
+      "seller_id": "9f505651f4a6abe901a56cdc21508025",
+      "shipping_limit_date": "1515002375",
+      "price": "19.99",
+      "freight_value": "14.1"
+    },
+    {
+      "order_id": "0025c5d1a8ca53a240ec2634bb4492ea",
+      "order_item_id": "1",
+      "product_id": "35537536ed2b4c561b4018bf3abf54e0",
+      "seller_id": "955fee9216a65b617aa5c0531780ce60",
+      "shipping_limit_date": "2018-07-10 09:30:09",
+      "price": "390.0",
+      "freight_value": "29.39"
+    },
+    {
+      "order_id": "002611a77fe03d076285fd4ca95db77c",
+      "order_item_id": "1",
+      "product_id": "fe077ec80df6b4ee60bb4498d5ab1962",
+      "seller_id": "87142160b41353c4e5fca2360caf6f92",
+      "shipping_limit_date": "2018-03-07 02:49:09",
+      "price": "135.0",
+      "freight_value": "21.75"
+    },
+    {
+      "order_id": "002691433f09002ac9ca0c4e8dbb8ead",
+      "order_item_id": "1",
+      "product_id": "430d215740da7fdda91cc938f8fd92f6",
+      "seller_id": "0887a9f087bcd5d9f6642b52f897fc6c",
+      "shipping_limit_date": "2017-02-06 21:18:03",
+      "price": "104.0",
+      "freight_value": "16.43"
+    },
+    {
+      "order_id": "0026a368634b6e6f34f33b1499773a30",
+      "order_item_id": "1",
+      "product_id": "892832da5b05b0f54578e1f14f193c22",
+      "seller_id": "12b9676b00f60f3b700e83af21824c0e",
+      "shipping_limit_date": "1510349205",
+      "price": "149.0",
+      "freight_value": "15.8"
+    },
+    {
+      "order_id": "00275bce676303c3bfd7292aefdfa223",
+      "order_item_id": "1",
+      "product_id": "6490b9f63b0b595e1c1402b46b0f50ad",
+      "seller_id": "99eaacc9e6046db1c82b163c5f84869f",
+      "shipping_limit_date": "04/12/2017 03:32:47",
+      "price": "279.9",
+      "freight_value": "13.46"
+    },
+    {
+      "order_id": "00276d5c3491fbf55305e26891040df9",
+      "order_item_id": "1",
+      "product_id": "71c89e9d8fa274b017279aa322cd0e19",
+      "seller_id": "8f78f0903005064036736c7173a5c2ed",
+      "shipping_limit_date": "2018-02-27 11:55:57",
+      "price": "44.9",
+      "freight_value": "23.22"
+    },
+    {
+      "order_id": "002834535f7a609a5c68266f173fa59e",
+      "order_item_id": "1",
+      "product_id": "df3655ac9aa8c6cbfa63bdd8d3b09c50",
+      "seller_id": "ea8482cd71df3c1969d7b9473ff13abc",
+      "shipping_limit_date": "2018-07-26 17:44:36",
+      "price": "37.99",
+      "freight_value": "19.18"
+    },
+    {
+      "order_id": "0028de0ca693a1bb26448916a81105cc",
+      "order_item_id": "1",
+      "product_id": "059344baebbeaa42fa9f2bbe11b1583e",
+      "seller_id": "955fee9216a65b617aa5c0531780ce60",
+      "shipping_limit_date": "2018-08-21 03:35:17",
+      "price": "29.99",
+      "freight_value": "15.31"
+    },
+    {
+      "order_id": "002955b0acc63d04f6724a31967e82bd",
+      "order_item_id": "1",
+      "product_id": "d9bdf643d95cb89844c0da1a0df1d16e",
+      "seller_id": "058fd0aa2bfdb2274e05e1ae971dabb6",
+      "shipping_limit_date": "1513957891",
+      "price": "120.0",
+      "freight_value": "15.59"
+    },
+    {
+      "order_id": "0029c5db35ef291ce99d1262012e7daa",
+      "order_item_id": "1",
+      "product_id": "7614c62b86a81021243e438cfde78ccc",
+      "seller_id": "900ba814c251a692506d7834c1218441",
+      "shipping_limit_date": "2018-09-03 03:50:23",
+      "price": "492.75",
+      "freight_value": "21.62"
+    },
+    {
+      "order_id": "0029f17cf0e7640c5cb6825af681303f",
+      "order_item_id": "1",
+      "product_id": "01c666c82f414c762ad21bffa56e8b49",
+      "seller_id": "d3dcf0604eabf0224fbd5948b5e02f69",
+      "shipping_limit_date": "2018-05-08 12:14:52",
+      "price": "94.9",
+      "freight_value": "18.54"
+    },
+    {
+      "order_id": "002af7fa9eb99d1456bceb6a13d6fc0b",
+      "order_item_id": "1",
+      "product_id": "c2ece64199af7a53793ed9612a89a8cd",
+      "seller_id": "6c7d50c24b3ccd2fd83b44d8bb34e073",
+      "shipping_limit_date": "2018-02-22 19:46:50",
+      "price": "88.34",
+      "freight_value": "21.11"
+    },
+    {
+      "order_id": "002b430ff89b3a24c31a1170acbbedea",
+      "order_item_id": "1",
+      "product_id": "cc47c0863559499f01b4cad750929d10",
+      "seller_id": "7a67c85e85bb2ce8582c35f2203ad736",
+      "shipping_limit_date": "invalid-date",
+      "price": "199.99",
+      "freight_value": "65.56"
+    },
+    {
+      "order_id": "002b4e6fa42cd4a22cc86abc18fe9c05",
+      "order_item_id": "1",
+      "product_id": "a6f449f6257f26e556013151cee46b4b",
+      "seller_id": "b1a81260566c1bac3114a6d124413f27",
+      "shipping_limit_date": "15/03/2018 10:35:37",
+      "price": "99.9",
+      "freight_value": "19.67"
+    },
+    {
+      "order_id": "002c9def9c9b951b1bec6d50753c9891",
+      "order_item_id": "1",
+      "product_id": "2d9ff06c8870a518f5f6909774e140fb",
+      "seller_id": "00720abe85ba0859807595bbf045a33b",
+      "shipping_limit_date": "2018-05-21 17:32:03",
+      "price": "78.0",
+      "freight_value": "8.9"
+    },
+    {
+      "order_id": "002c9def9c9b951b1bec6d50753c9891",
+      "order_item_id": "2",
+      "product_id": "2d9ff06c8870a518f5f6909774e140fb",
+      "seller_id": "00720abe85ba0859807595bbf045a33b",
+      "shipping_limit_date": "2018-05-21 17:32:03",
+      "price": "78.0",
+      "freight_value": "8.9"
+    },
+    {
+      "order_id": "002d040018d12a3853c059f7f23ab5b1",
+      "order_item_id": "1",
+      "product_id": "97c58626cc3e15d514d2095f69650220",
+      "seller_id": "fe2032dab1a61af8794248c8196565c9",
+      "shipping_limit_date": "2017-11-27 03:47:23",
+      "price": "155.0",
+      "freight_value": "14.84"
+    },
+    {
+      "order_id": "002f16b7bc4530031b7d90f791b12d8a",
+      "order_item_id": "1",
+      "product_id": "d54c5b81fc2b38707588dd4eddc7c594",
+      "seller_id": "0241d4d5d36f10f80c644447315af0bd",
+      "shipping_limit_date": "1530724272",
+      "price": "249.9",
+      "freight_value": "34.23"
+    },
+    {
+      "order_id": "002f19a65a2ddd70a090297872e6d64e",
+      "order_item_id": "1",
+      "product_id": "9eae06d51aaa383b2bed5547a19d581c",
+      "seller_id": "1835b56ce799e6a4dc4eddc053f04066",
+      "shipping_limit_date": "invalid-date",
+      "price": "53.98",
+      "freight_value": "23.31"
+    },
+    {
+      "order_id": "002f98c0f7efd42638ed6100ca699b42",
+      "order_item_id": "1",
+      "product_id": "d41dc2f2979f52d75d78714b378d4068",
+      "seller_id": "7299e27ed73d2ad986de7f7c77d919fa",
+      "shipping_limit_date": "1502357415",
+      "price": "8.99",
+      "freight_value": "32.57"
+    },
+    {
+      "order_id": "002f98c0f7efd42638ed6100ca699b42",
+      "order_item_id": "2",
+      "product_id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+      "seller_id": "fa40cc5b934574b62717c68f3d678b6d",
+      "shipping_limit_date": "2017-08-10 09:30:15",
+      "price": "44.9",
+      "freight_value": "7.16"
+    },
+    {
+      "order_id": "0030d783f979fbc5981e75613b057344",
+      "order_item_id": "1",
+      "product_id": "ae27a5524edb2c8dc4656c670f458fb7",
+      "seller_id": "8e6cc767478edae941d9bd9eb778d77a",
+      "shipping_limit_date": "1511997218",
+      "price": "60.6",
+      "freight_value": "17.67"
+    },
+    {
+      "order_id": "0030ff924c38549807645976adeef2c0",
+      "order_item_id": "1",
+      "product_id": "bd7cab8de4d7943286634023cc06f8ff",
+      "seller_id": "855668e0971d4dfd7bef1b6a4133b41b",
+      "shipping_limit_date": "06/04/2018 17:10:21",
+      "price": "225.0",
+      "freight_value": "67.24"
+    },
+    {
+      "order_id": "00310b0c75bb13015ec4d82d341865a4",
+      "order_item_id": "1",
+      "product_id": "c8e7c2ef329fcda4a233e7e2f8bb8b7d",
+      "seller_id": "a2deecd5398f5df4987110c80a1972a3",
+      "shipping_limit_date": "2018-08-17 15:04:25",
+      "price": "39.9",
+      "freight_value": "15.38"
+    },
+    {
+      "order_id": "00324b3eda39ba5ecce3945823e3594c",
+      "order_item_id": "1",
+      "product_id": "54e5063e43f27f747d592eb24e913150",
+      "seller_id": "0dd184061fb0eaa7ca37932c68ab91c5",
+      "shipping_limit_date": "2018-04-17 09:12:11",
+      "price": "76.0",
+      "freight_value": "34.07"
+    },
+    {
+      "order_id": "0032d07457ae9c806c79368d7d9ce96b",
+      "order_item_id": "1",
+      "product_id": "08279c494018541f71443c07d77560f8",
+      "seller_id": "e333046ce6517bd8bb510291d44f0130",
+      "shipping_limit_date": "2018-03-15 19:28:51",
+      "price": "159.0",
+      "freight_value": "27.19"
+    },
+    {
+      "order_id": "003324c70b19a16798817b2b3640e721",
+      "order_item_id": "1",
+      "product_id": "2b939dc9b176d7fa21594d588815d4a4",
+      "seller_id": "dbc22125167c298ef99da25668e1011f",
+      "shipping_limit_date": "1495653754",
+      "price": "102.9",
+      "freight_value": "14.45"
+    },
+    {
+      "order_id": "003324c70b19a16798817b2b3640e721",
+      "order_item_id": "2",
+      "product_id": "2b939dc9b176d7fa21594d588815d4a4",
+      "seller_id": "dbc22125167c298ef99da25668e1011f",
+      "shipping_limit_date": "2017-05-24 19:22:34",
+      "price": "102.9",
+      "freight_value": "14.45"
+    },
+    {
+      "order_id": "00335b686d693c7d72deeb12f8e89227",
+      "order_item_id": "1",
+      "product_id": "87b08e712cc4c9fe70984c5a24b29e2f",
+      "seller_id": "f00e21b1e91a79653163b7fd8f293ff1",
+      "shipping_limit_date": "1501213526",
+      "price": "63.9",
+      "freight_value": "16.89"
+    },
+    {
+      "order_id": "00335f75ea6a4455b524a8dd177067f5",
+      "order_item_id": "1",
+      "product_id": "e1bf2f209fd2b08e1af3ed71732d9008",
+      "seller_id": "70c27847eca8195c983ed7e798c56743",
+      "shipping_limit_date": "2018-05-02 22:10:29",
+      "price": "168.8",
+      "freight_value": "8.21"
+    },
+    {
+      "order_id": "00337fe25a3780b3424d9ad7c5a4b35e",
+      "order_item_id": "1",
+      "product_id": "1f9799a175f50c9fa725984775cac5c5",
+      "seller_id": "cfb1a033743668a192316f3c6d1d2671",
+      "shipping_limit_date": "1506707416",
+      "price": "59.9",
+      "freight_value": "9.94"
+    },
+    {
+      "order_id": "00337fe25a3780b3424d9ad7c5a4b35e",
+      "order_item_id": "2",
+      "product_id": "13944d17b257432717fd260e69853140",
+      "seller_id": "cfb1a033743668a192316f3c6d1d2671",
+      "shipping_limit_date": "2017-09-29 17:50:16",
+      "price": "59.9",
+      "freight_value": "9.94"
+    },
+    {
+      "order_id": "003423b755b562962a6225a8de40d12e",
+      "order_item_id": "1",
+      "product_id": "84904413b82eee333a3f79137e8d197e",
+      "seller_id": "23c38debaffe4a25a30fdbd9b586a13f",
+      "shipping_limit_date": "18/07/2018 04:25:09",
+      "price": "232.75",
+      "freight_value": "28.58"
+    },
+    {
+      "order_id": "00345f338696283410b7977d2e3efc89",
+      "order_item_id": "1",
+      "product_id": "0f2fd0a589cb7849c1dbedbd4109c2f8",
+      "seller_id": "516e7738bd8f735ac19a010ee5450d8d",
+      "shipping_limit_date": "2018-08-23 15:11:40",
+      "price": "48.9",
+      "freight_value": "18.44"
+    },
+    {
+      "order_id": "0035246a40f520710769010f752e7507",
+      "order_item_id": "1",
+      "product_id": "8a6187b2665118d5095f99a25fd7ba7a",
+      "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+      "shipping_limit_date": "2017-08-23 01:25:39",
+      "price": "87.0",
+      "freight_value": "12.11"
+    },
+    {
+      "order_id": "0035c0b07126fe9c24a325216fb96064",
+      "order_item_id": "1",
+      "product_id": "ec02a5d380128f7a188e9ce8f3ddd832",
+      "seller_id": "8444e55c1f13cd5c179851e5ca5ebd00",
+      "shipping_limit_date": "1513042185",
+      "price": "131.9",
+      "freight_value": "18.54"
+    },
+    {
+      "order_id": "0035e6b7ade84b3f5b86bd49814793df",
+      "order_item_id": "1",
+      "product_id": "71a5f1c2a5fd9889ef26b5ac22aec9c6",
+      "seller_id": "537eb890efff034a88679788b647c564",
+      "shipping_limit_date": "2018-02-27 03:31:08",
+      "price": "19.9",
+      "freight_value": "14.1"
+    },
+    {
+      "order_id": "0036757472ece3dde52fd4bfd929c90e",
+      "order_item_id": "1",
+      "product_id": "4c1bbc12438daec98a77243c2bf7a3ba",
+      "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
+      "shipping_limit_date": "2018-08-08 15:10:11",
+      "price": "136.99",
+      "freight_value": "66.04"
+    },
+    {
+      "order_id": "0036887767dea4bd43b1a88cd0d9477a",
+      "order_item_id": "1",
+      "product_id": "3a264b078bf20e98f315ff65c23fa263",
+      "seller_id": "46dc3b2cc0980fb8ec44634e21d2718e",
+      "shipping_limit_date": "invalid-date",
+      "price": "399.99",
+      "freight_value": "23.64"
+    }
+  ],
+  "total": 123915,
+  "limit": 100,
+  "offset": 0,
+  "has_next": true
+}
