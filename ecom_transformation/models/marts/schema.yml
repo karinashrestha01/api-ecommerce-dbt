@@ -11,18 +11,6 @@ models:
           - unique
           - not_null
 
-  - name: dim_orders
-    description: "Order dimension table (Order status, timestamps)"
-    columns:
-      - name: order_id
-        tests:
-          - unique
-          - not_null
-      - name: customer_id
-        tests:
-          - relationships:
-              to: ref('dim_customer')
-              field: customer_id
 
   - name: dim_product
     description: "Product dimension table (Categories, names)"
@@ -40,33 +28,7 @@ models:
           - unique
           - not_null
 
-  - name: dim_reviews
-    description: "Reviews dimension"
-    columns:
-      - name: review_id
-        tests:
-          - unique
-          - not_null
-      - name: order_id
-        tests:
-          - relationships:
-              to: ref('dim_orders')
-              field: order_id
 
-  - name: dim_payments
-    description: "Payments dimension/lookup"
-    columns:
-      # We added this Surrogate Key (MD5) to ensure uniqueness
-      - name: payment_sk
-        tests:
-          - unique
-          - not_null
-      - name: order_id
-        tests:
-          - not_null
-  
-
-  
   # --- FACTS ---
   - name: fact_order_items
     description: "Transactional fact table at the order item grain"

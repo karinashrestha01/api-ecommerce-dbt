@@ -7,6 +7,7 @@ json_extraction AS (
         data->>'product_id' as product_id,
         data->>'product_category_name' as product_category_name,
         data->>'product_category_name_english' as product_category_name_english,
+        data->>'product_description_length' as product_description_length,
         data->>'product_photos_qty' as product_photos_qty,
         data->>'product_weight_g' as product_weight_g,
         data->>'product_length_cm' as product_length_cm,
@@ -36,6 +37,7 @@ SELECT
     END AS category_name_en,
     
     -- Fix: Explicitly handle 'NaN' before casting to Numeric/Integer
+    CAST(NULLIF(NULLIF(product_description_length, ''), 'NaN') AS NUMERIC) AS product_description_length,
     CAST(NULLIF(NULLIF(product_photos_qty, ''), 'NaN') AS NUMERIC)::INTEGER AS photos_qty,
     CAST(NULLIF(NULLIF(product_weight_g, ''), 'NaN') AS NUMERIC) AS weight_g,
     CAST(NULLIF(NULLIF(product_length_cm, ''), 'NaN') AS NUMERIC) AS length_cm,

@@ -12,7 +12,7 @@ order_totals AS (
 )
 
 SELECT
-    -- Keys
+    -- surrogate keys
     MD5(orders.order_id) AS order_key,
     orders.order_id,
     MD5(orders.customer_id) AS customer_key,
