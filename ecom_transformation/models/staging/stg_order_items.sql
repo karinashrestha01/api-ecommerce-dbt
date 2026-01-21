@@ -8,8 +8,6 @@ SELECT
     order_item_id,
     product_id,
     seller_id,
-    
-    -- FIX: Robust Date Handling for mixed formats
     CASE 
         -- 1. Handle garbage / empty
         WHEN shipping_limit_date IS NULL THEN NULL

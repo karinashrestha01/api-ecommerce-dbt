@@ -21,7 +21,13 @@ SELECT
             THEN to_timestamp(order_purchase_timestamp, 'DD/MM/YYYY HH24:MI:SS')
         -- 3. Fallback
         ELSE order_purchase_timestamp::timestamp
-    END AS order_purchase_at,
+    END AS purchase_at,
+
+    CASE 
+        WHEN order_approved_at IS NULL OR order_approved_at = 'invalid-date' OR order_approved_at = 'None' THEN NULL
+        WHEN order_approved_at ~ '^\d+$' THEN to_timestamp(order_approved_at::bigint)
+        ELSE CAST(order_approved_at AS TIMESTAMP)
+    END AS approved_at,
 
     -- CLEANING: order_delivered_customer_date
     CASE 
@@ -34,7 +40,7 @@ SELECT
         WHEN order_delivered_customer_date ~ '^\d{2}/\d{2}/\d{4}' 
             THEN to_timestamp(order_delivered_customer_date, 'DD/MM/YYYY HH24:MI:SS')
         ELSE order_delivered_customer_date::timestamp
-    END AS order_delivered_at,
+    END AS delivered_at,
     
     -- CLEANING: order_estimated_delivery_date
     CASE 
@@ -45,6 +51,6 @@ SELECT
         WHEN order_estimated_delivery_date ~ '^\d{2}/\d{2}/\d{4}' 
             THEN to_timestamp(order_estimated_delivery_date, 'DD/MM/YYYY HH24:MI:SS')
         ELSE order_estimated_delivery_date::timestamp
-    END AS order_estimated_delivery_at
+    END AS estimated_delivery_at
 
 FROM source

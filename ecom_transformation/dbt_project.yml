@@ -27,5 +27,5 @@ models:
     
     # Applies to all files under models/marts/
     marts:
-      +materialized: table  # You can change this to 'table' later
+      +materialized: table  
       +schema: marts

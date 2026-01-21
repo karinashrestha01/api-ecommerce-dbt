@@ -6,14 +6,9 @@ WITH source AS (
 SELECT
     review_id,
     order_id,
-    -- Handle 'None' in scores before casting
     CAST(NULLIF(review_score, 'None') AS INTEGER) AS review_score,
-    
     COALESCE(review_comment_title, 'No Title') AS review_comment_title,
-    
-    REPLACE(REPLACE(review_comment_message, '\n', ' '), '\r', '') AS review_comment_message,
-    
-    -- FIX: Handle 'None' string for Creation Date
+    REPLACE(REPLACE(review_comment_message, '\n', ' '), '\r', '') AS review_message,
     CASE 
         WHEN review_creation_date IS NULL THEN NULL
         WHEN review_creation_date = '' THEN NULL

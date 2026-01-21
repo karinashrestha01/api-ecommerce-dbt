@@ -4,7 +4,6 @@ WITH source AS (
 
 SELECT
     product_id,
-    
     -- 1. Portuguese Category (Keep your existing Base64 logic)
     CASE 
         WHEN product_category_name ~ '^[a-zA-Z0-9+/=]+$' 
@@ -27,12 +26,9 @@ SELECT
             INITCAP(REPLACE(TRIM(product_category_name_english), '_', ' '))
     END AS category_name_en,
     
-    -- FIX: Handle "1.0" by casting to Numeric first, then Integer
     CAST(CAST(NULLIF(product_photos_qty, '') AS NUMERIC) AS INTEGER) AS photos_qty,
-
     CAST(NULLIF(product_weight_g, '') AS NUMERIC) AS weight_g,
     CAST(NULLIF(product_length_cm, '') AS NUMERIC) AS length_cm,
     CAST(NULLIF(product_height_cm, '') AS NUMERIC) AS height_cm,
     CAST(NULLIF(product_width_cm, '') AS NUMERIC) AS width_cm
-
 FROM source
