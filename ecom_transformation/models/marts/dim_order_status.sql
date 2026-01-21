@@ -10,10 +10,7 @@ distinct_statuses AS (
 SELECT
     -- Surrogate Key
     MD5(status_name) AS order_status_key,
-    
     status_name,
-    
-    -- Derived Flags as shown in Image
     CASE 
         WHEN status_name = 'canceled' THEN true 
         ELSE false 

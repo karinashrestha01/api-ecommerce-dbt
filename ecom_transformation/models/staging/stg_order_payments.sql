@@ -1,7 +1,20 @@
 WITH source AS (
-    -- Deduplicate based on the composite key
+    SELECT * FROM {{ source('ecommerce_raw', 'order_payments') }}
+),
+
+json_extraction AS (
+    SELECT
+        data->>'order_id' as order_id,
+        data->>'payment_sequential' as payment_sequential,
+        data->>'payment_type' as payment_type,
+        data->>'payment_installments' as payment_installments,
+        data->>'payment_value' as payment_value
+    FROM source
+),
+
+deduplicated AS (
     SELECT DISTINCT ON (order_id, payment_sequential) * 
-    FROM {{ source('ecommerce_raw', 'order_payments') }}
+    FROM json_extraction
 )
 
 SELECT
@@ -16,4 +29,4 @@ SELECT
     END AS payment_type,
     CAST(NULLIF(payment_installments, 'None') AS INTEGER) AS payment_installments,
     CAST(NULLIF(payment_value, 'None') AS NUMERIC) AS payment_value
-FROM source
+FROM deduplicated

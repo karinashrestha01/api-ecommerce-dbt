@@ -3,11 +3,8 @@ WITH stg_reviews AS (
 )
 
 SELECT
-    -- Surrogate Key
     MD5(review_id) AS review_detail_key,
-    
     review_id,
     review_comment_title,
-    review_comment_message
-
+    review_message AS review_comment_message 
 FROM stg_reviews

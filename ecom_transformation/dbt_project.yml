@@ -22,7 +22,7 @@ models:
   ecom_transformation:
     # Applies to all files under models/staging/
     staging:
-      +materialized: view
+      +materialized: table
       +schema: staging
     
     # Applies to all files under models/marts/
