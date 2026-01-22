@@ -24,7 +24,7 @@ SELECT
     order_id,
     CAST(NULLIF(review_score, 'None') AS INTEGER) AS review_score,
     COALESCE(review_comment_title, 'No Title') AS review_comment_title,
-    REPLACE(REPLACE(review_comment_message, '\n', ' '), '\r', '') AS review_message,
+    COALESCE(REPLACE(REPLACE(review_comment_message, '\n', ' '), '\r', ''),'No Comment') AS review_message,
     
     -- Creation Date Cleaning
     CASE 

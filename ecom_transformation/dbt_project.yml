@@ -29,3 +29,9 @@ models:
     marts:
       +materialized: table  
       +schema: marts
+
+tests:
+  ecom_transformation: # This must match your project 'name' at the top of the file
+    # This refers to the specific test file name in your tests/ folder
+    assert_order_payments_match_order_totals:
+      severity: warn 

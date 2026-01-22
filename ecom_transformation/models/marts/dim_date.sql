@@ -19,3 +19,13 @@ SELECT
     CAST(full_date AS TIMESTAMP) AS timestamp
 
 FROM date_spine
+UNION ALL
+
+-- The "Unknown" Member Row
+SELECT 
+    -1 AS date_key,  -- Special ID for missing dates
+    NULL::DATE AS date,
+    NULL::INTEGER AS year,
+    NULL::INTEGER AS month,
+    NULL::INTEGER AS day,
+    NULL::TIMESTAMP AS timestamp

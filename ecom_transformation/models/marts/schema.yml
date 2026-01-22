@@ -1,69 +1,190 @@
 version: 2
 
 models:
-  
-  # --- DIMENSIONS ---
-  - name: dim_customer
-    description: "Customer dimension table"
+  # DIMENSIONS
+  - name: dim_customers
+    description: "Customer dimension containing profile and location info. Includes MD5 surrogate key."
     columns:
+      - name: customer_key
+        description: "Surrogate Primary Key (MD5 of customer_id)"
+        tests:
+          - unique
+          - not_null
       - name: customer_id
+        description: "Natural Key from source system"
         tests:
           - unique
           - not_null
 
+  - name: dim_date
+    description: "Date spine dimension for time-series analysis (2016-2020)."
+    columns:
+      - name: date_key
+        description: "Integer date key (YYYYMMDD)"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_order_status
+    description: "Lookup table for order statuses with derived lifecycle flags."
+    columns:
+      - name: order_status_key
+        description: "Surrogate PK"
+        tests:
+          - unique
+          - not_null
+      - name: status_name
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_payment_methods
+    description: "Lookup table for distinct payment types."
+    columns:
+      - name: payment_method_key
+        description: "Surrogate PK"
+        tests:
+          - unique
+          - not_null
 
   - name: dim_product
-    description: "Product dimension table (Categories, names)"
+    description: "Product dimension containing categories and physical attributes."
     columns:
-      - name: product_id
+      - name: product_key
+        description: "Surrogate PK (MD5)"
         tests:
           - unique
           - not_null
+      - name: product_id
+        description: "Natural Key"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_review_details
+    description: "Dimension containing the text content and sentiment of reviews (1:1 with Fact Reviews)."
+    columns:
+      - name: review_detail_key
+        description: "Surrogate PK"
+        tests:
+          - unique
+          - not_null
+      - name: sentiment
+        description: "Derived sentiment based on score"
+        tests:
+          - accepted_values:
+              values: ['Positive', 'Neutral', 'Negative']
 
   - name: dim_seller
-    description: "Seller dimension table (Location data)"
+    description: "Seller dimension containing location data."
     columns:
       - name: seller_id
+        description: "Natural Key (Acts as PK here)"
         tests:
           - unique
           - not_null
 
 
-  # --- FACTS ---
-  - name: fact_order_items
-    description: "Transactional fact table at the order item grain"
+  # FACTS
+  - name: fact_orders
+    description: "Order Header fact table. Contains aggregated totals and cycle-time metrics."
     columns:
-      # The Primary Key we created with MD5
-      - name: order_item_sk
+      - name: order_key
+        description: "Surrogate PK"
         tests:
           - unique
           - not_null
-
       - name: order_id
+        tests:
+          - unique
+          - not_null
+      
+      # Foreign Keys
+      - name: customer_key
         tests:
           - not_null
           - relationships:
-              to: ref('dim_orders')
-              field: order_id
-              
-      - name: product_id
+              to: ref('dim_customers')
+              field: customer_key
+      - name: order_status_key
+        tests:
+          - relationships:
+              to: ref('dim_order_status')
+              field: order_status_key
+      - name: order_purchase_timestamp_key
+        tests:
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+  - name: fact_order_items
+    description: "Line-item fact table. Granularity: One row per item in an order."
+    columns:
+      - name: order_item_sk
+        description: "Surrogate PK (MD5 of Order + Item ID)"
+        tests:
+          - unique
+          - not_null
+      
+      # Foreign Keys
+      - name: order_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('fact_orders')
+              field: order_key  # Pointing to the Key in the parent table
+
+      - name: product_key
         tests:
           - not_null
           - relationships:
               to: ref('dim_product')
-              field: product_id
+              field: product_key
 
-      - name: seller_id
+      - name: seller_key
         tests:
           - not_null
           - relationships:
               to: ref('dim_seller')
-              field: seller_id
+              field: seller_key
 
- 
-      - name: customer_id
+      # 2. Keep the Natural Keys for debugging, but you usually don't need relationship tests here
+      #    unless you are paranoid about hash collisions (which is rare with MD5).
+      - name: order_id
+        description: "Natural key kept for debugging/audit purposes"
+      - name: product_id
+      - name: seller_id
+
+  - name: fct_payements
+    # Note: Ensure your filename matches this (you had a typo 'payements' in your prompt)
+    description: "Transactional fact table for payments. Granularity: One row per payment attempt."
+    columns:
+      - name: payment_sk
+        description: "Surrogate PK"
         tests:
+          - unique
           - not_null
+      - name: order_id
+        tests:
           - relationships:
-              to: ref('dim_customer')
-              field: customer_id
+              to: ref('fact_orders')
+              field: order_id
+
+  - name: fct_reviews
+    description: "Fact table for review scores and response times."
+    columns:
+      - name: review_id
+        description: "Natural Key acting as PK"
+        tests:
+          - unique
+          - not_null
+      - name: review_creation_date_key
+        tests:
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('fact_orders')
+              field: order_id

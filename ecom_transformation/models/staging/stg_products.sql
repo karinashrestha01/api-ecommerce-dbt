@@ -37,7 +37,7 @@ SELECT
     END AS category_name_en,
     
     -- Fix: Explicitly handle 'NaN' before casting to Numeric/Integer
-    CAST(NULLIF(NULLIF(product_description_length, ''), 'NaN') AS NUMERIC) AS product_description_length,
+    ROUND(CAST(NULLIF(NULLIF(product_description_length, ''), 'NaN') AS NUMERIC),0) AS product_description_length,
     CAST(NULLIF(NULLIF(product_photos_qty, ''), 'NaN') AS NUMERIC)::INTEGER AS photos_qty,
     CAST(NULLIF(NULLIF(product_weight_g, ''), 'NaN') AS NUMERIC) AS weight_g,
     CAST(NULLIF(NULLIF(product_length_cm, ''), 'NaN') AS NUMERIC) AS length_cm,

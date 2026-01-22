@@ -6,16 +6,19 @@ SELECT
     reviews.order_id,
     COALESCE(orders.customer_id, 'Unknown') AS customer_id,
     reviews.review_score,
-    CAST(TO_CHAR(review_creation_date, 'YYYYMMDD') AS INTEGER) AS review_creation_date_key,
-    CASE 
-        WHEN review_answer_timestamp IS NOT NULL 
-        THEN CAST(TO_CHAR(review_answer_timestamp, 'YYYYMMDD') AS INTEGER) 
-        ELSE NULL 
-    END AS review_answer_timestamp_key,
+       -- Creation Date Key: Handle NULLs by pointing to -1
+    COALESCE(
+        CAST(TO_CHAR(review_creation_date, 'YYYYMMDD') AS INTEGER), 
+        -1
+    ) AS review_creation_date_key,
+    COALESCE(
+    CAST(TO_CHAR(review_answer_timestamp, 'YYYYMMDD') AS INTEGER), -1) AS review_answer_timestamp_key,
 
     -- Derived Metric: Response Time in Hours
     -- Logic: Extract the total seconds between creation and answer, divide by 3600
-    EXTRACT(EPOCH FROM (review_answer_timestamp - review_creation_date)) / 3600 AS response_time_hours
+    ROUND(CAST(GREATEST(COALESCE(EXTRACT(EPOCH FROM (review_answer_timestamp - review_creation_date)) / 3600, 0), 0) 
+        AS NUMERIC), 
+    2) AS response_time_hours
 
 
 FROM reviews
